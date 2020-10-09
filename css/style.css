@@ -1,0 +1,261 @@
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(20px);
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    padding: 70px 0px;
+    text-align: center;
+}
+
+header p {
+    position: relative;
+    top: -15px;
+    font-size: 20px;
+}
+
+/* Content */
+
+/* List block */
+.list {
+    margin: 0px auto 50px;
+    border-radius: 0px 0px 20px 20px;
+    width: 800px;
+    min-height: 200px;
+    background-color: #fff;
+    border-bottom: 2px solid #999;
+}
+
+/* List head */
+.empty_list {
+    display: none;
+}
+
+.list_head {
+    border: 1px solid #164ea8;
+    background: linear-gradient(#578ade, #164ea8);
+    padding: 5px 15px;
+    display: flex;
+}
+
+.list h2 {
+    opacity: 0.9;
+    flex-grow: 1;
+}
+
+.list h2:hover {
+    opacity: 1;
+}
+
+.list h2 {
+    color: #fff;
+}
+
+.list_head i.icons {
+    opacity: 0.7;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.list_head i.icons:hover {
+    opacity: 1;
+}
+
+.list_head .icon_main {
+    margin: 7px 12px 7px 0px;
+}
+
+
+.list .list_head:hover .icon_main {
+    opacity: 1;
+}
+
+.list_head .icon_control {
+    color: #fff;
+    text-align: center;
+    margin: 7px 0px;
+    padding: 0px 10px;
+    border-right: 1px solid #ccc;
+}
+
+.list_head .icon_control:hover {
+    cursor: pointer;
+}
+
+.list_head .icon_control:last-child {
+    border-right: none;
+}
+
+/* Add task block */
+.list_add_block {
+    background-color: #ddd;
+    background: linear-gradient(#eee, #ccc);
+    display: flex;
+    padding: 10px 0px;
+}
+
+.list_add_block .icons.plus {
+    color: #2eb347;
+    font-size: 35px;
+    padding: 0px 10px;
+}
+
+.list_add_block .add_task_name {
+    background-color: #fff;
+    border: 1px solid #555;
+    border-radius: 3px 0px 0px 3px;
+    padding: 0px 10px;
+    flex-grow: 1;
+}
+
+.list_add_block .add_task_sub {
+    color: #fff;
+    background-color: #2eb347;
+    background: linear-gradient(#4ede69, #2eb347);
+    border: 1px solid #555;
+    border-left: none;
+    border-radius: 0px 3px 3px 0px;
+    padding: 0px 25px;
+    margin-right: 10px;
+}
+
+.list_add_block .add_task_sub:hover {
+    background-color: #2eb347;
+    background: linear-gradient(#2eb347, #2eb347);
+    cursor: pointer;
+}
+
+/* Tasks */
+.tasks {
+    margin-bottom: 20px;
+}
+
+.task_one {
+    color: #555;
+    background-color: #fff;
+    display: flex;
+    font-size: 18px;
+    opacity: 0.7;
+    padding: 0px 0px;
+    border-bottom: 1px solid #999;
+}
+
+.task_one:hover {
+    background-color: #fffbc9;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.task_one .task_check {
+    padding: 12px 16px;
+    text-align: center;
+    border-right: 5px double #999;
+}
+
+.task_check input {
+    width: 20px;
+    height: 20px;
+}
+
+.task_one .task_name {
+    flex-grow: 1;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.task_one .task_controls {
+    text-align: center;
+    padding: 10px 15px;
+    border-left: 1px solid #999;
+    display: none;
+}
+
+.task_one:hover .task_controls {
+    display: block;
+}
+
+.task_controls .icons {
+    padding: 0px 6px;
+    font-size: 20px;
+}
+
+.task_controls .move:hover {
+    color: #000;
+}
+
+.task_controls .edit:hover {
+    color: #050;
+}
+
+.task_controls .remove:hover {
+    color: #500;
+}
+
+/* Controls elements */
+.controls {
+    text-align: center;
+}
+
+.add_list {
+    border: 1px solid #164ea8;
+    border-radius: 2px;
+    background-color: #164ea8;
+    background: linear-gradient(#578ade, #164ea8);
+    font-size: 20px;
+    padding: 2px 15px 5px;
+    font-weight: bold;
+}
+
+.add_list:hover {
+    background: linear-gradient(#164ea8, #164ea8);
+    cursor: pointer;
+}
+
+.add_list i {
+    color: #081730;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.add_list span {
+    color: #fff;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
+    padding: 40px 0px;
+    color: #fff;
+}
+
+/* Edit mode */
+.list_head h2 input,
+.list_head h2 textarea {
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #005;
+    border: none;
+    background-color: #578ade;
+    color: #fff;
+    font-weight: bold;
+    height: 1.5em;
+}
+
+.task_one textarea {
+    width: 100%;
+    padding: 0px 5px;
+    border: none;
+    background-color: #ddd;
+    color: #000;
+    height: 50px;
+}
